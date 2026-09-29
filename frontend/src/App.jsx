@@ -2,6 +2,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Layout from "./layouts/Layout";
 import Home from "./pages/Home";
+import Services from "./pages/Services";
+
 
 function PlaceholderPage({ title }) {
   return (
@@ -31,10 +33,7 @@ function App() {
         <Route element={<Layout />}>
           <Route path="/" element={<Home />} />
 
-          <Route
-            path="/services"
-            element={<PlaceholderPage title="Services" />}
-          />
+          <Route path="/services" element={<Services />} />
 
           <Route
             path="/about"

@@ -56,7 +56,7 @@ function Intro() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="max-w-2xl text-base leading-7 text-slate-600 sm:text-[17px]"
           >
-            Luna Consult Group provides professional career support
+             LCP Careers provides professional career support
             for individuals who want to strengthen their professional
             presence, make better career decisions, and approach new
             opportunities with greater confidence.
@@ -141,7 +141,7 @@ function Intro() {
                 to="/about"
                 className="group inline-flex items-center gap-2 text-sm font-bold text-[#00B4D8] transition-colors duration-300 hover:text-slate-900"
               >
-                Discover Luna Consult Group
+                Discover  LCP Careers
 
                 <ArrowUpRight
                   size={17}
