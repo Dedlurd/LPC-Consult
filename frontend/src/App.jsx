@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./layouts/Layout";
 import Home from "./pages/Home";
 import Services from "./pages/Services";
+import About from "./pages/About";
 
 
 function PlaceholderPage({ title }) {
@@ -35,10 +36,7 @@ function App() {
 
           <Route path="/services" element={<Services />} />
 
-          <Route
-            path="/about"
-            element={<PlaceholderPage title="About LCP Careers" />}
-          />
+          <Route path="/about" element={<About />} />
 
           <Route
             path="/portfolio"
