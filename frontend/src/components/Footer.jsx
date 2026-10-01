@@ -140,7 +140,7 @@ function Footer() {
                 />
 
                 <span className="text-sm leading-6 text-slate-500">
-                   LCP Careers
+                   LPC Careers
                 </span>
               </div>
 
@@ -163,7 +163,7 @@ function Footer() {
 
         <div className="mt-12 flex flex-col gap-4 border-t border-slate-200 pt-6 sm:flex-row sm:items-center sm:justify-between">
           <p className="text-xs text-slate-400">
-            © {new Date().getFullYear()}  LCP Careers. All rights reserved.
+            © {new Date().getFullYear()}  LPC Careers. All rights reserved.
           </p>
 
           <p className="text-xs font-medium uppercase tracking-[0.12em] text-slate-400">

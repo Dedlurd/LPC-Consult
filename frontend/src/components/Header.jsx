@@ -84,7 +84,7 @@ function Header() {
               </motion.div>
 
               <span className="text-lg font-extrabold tracking-tight text-slate-900">
-                 LPC
+                LCP
                 <span className="ml-1 text-[#00B4D8]">
                   CAREERS
                 </span>

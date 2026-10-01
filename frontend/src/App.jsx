@@ -5,6 +5,8 @@ import Home from "./pages/Home";
 import Services from "./pages/Services";
 import About from "./pages/About";
 import Portfolio from "./pages/Portfolio";
+import Contact from "./pages/Contact";
+import Resources from "./pages/Resources";
 
 
 function PlaceholderPage({ title }) {
@@ -41,15 +43,9 @@ function App() {
 
           <Route path="/portfolio" element={<Portfolio />} />
 
-          <Route
-            path="/resources"
-            element={<PlaceholderPage title="Resources" />}
-          />
+          <Route path="/resources" element={<Resources />} />
 
-          <Route
-            path="/contact"
-            element={<PlaceholderPage title="Contact" />}
-          />
+         <Route path="/contact" element={<Contact />} />
 
           <Route
             path="/free-review"
