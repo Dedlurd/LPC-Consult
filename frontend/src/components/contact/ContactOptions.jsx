@@ -12,10 +12,10 @@ function ContactOptions() {
   const options = [
     {
       icon: Mail,
-      title: "Email LCP Careers",
+      title: "Email LPC Careers",
       text: "For written enquiries, service questions, documents, and quotes.",
       action: "Send an email",
-      href: "mailto:hello@lcpcareers.com",
+      href: "mailto:hello@lpccareers.com",
     },
     {
       icon: FileSearch,

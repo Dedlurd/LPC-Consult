@@ -49,7 +49,7 @@ function ContactCTA() {
             </h2>
 
             <p className="mt-5 max-w-2xl text-base leading-7 text-slate-300 sm:text-[17px] sm:leading-8">
-              Tell LCP Careers what you're working toward, and we'll
+              Tell LPC Careers what you're working toward, and we'll
               help you identify the most appropriate way to move forward.
             </p>
 

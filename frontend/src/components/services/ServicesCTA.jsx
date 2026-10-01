@@ -52,7 +52,7 @@ function ServicesCTA() {
 
             <p className="mt-5 max-w-2xl text-base leading-7 text-slate-300 sm:text-[17px] sm:leading-8">
               Choose the service or package that fits your current
-              career need, or speak with LCP Careers if you need help
+              career need, or speak with LPC Careers if you need help
               deciding where to begin.
             </p>
 
@@ -75,7 +75,7 @@ function ServicesCTA() {
                 to="/contact"
                 className="group inline-flex items-center justify-center gap-2 rounded-lg border border-white/25 bg-white/10 px-6 py-3.5 text-sm font-bold text-white backdrop-blur-sm transition-all duration-300 hover:-translate-y-0.5 hover:border-white/50 hover:bg-white/15"
               >
-                Contact LCP Careers
+                Contact LPC Careers
 
                 <ArrowRight
                   size={17}
@@ -141,7 +141,7 @@ function ServicesCTA() {
         >
           <div className="flex flex-col gap-2 text-xs text-slate-500 sm:flex-row sm:items-center sm:justify-between">
             <p>
-              LCP Careers · Professional Positioning · Career Strategy
+              LPC Careers · Professional Positioning · Career Strategy
             </p>
 
             <p>

@@ -126,7 +126,7 @@ function CaseStudies() {
 
           <p className="mt-5 max-w-2xl text-base leading-7 text-slate-600 sm:text-[17px]">
             Browse selected examples to see the types of professional
-            positioning work LCP Careers can provide.
+            positioning work LPC Careers can provide.
           </p>
         </motion.div>
 

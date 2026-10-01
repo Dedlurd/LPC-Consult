@@ -12,10 +12,10 @@ function ContactFAQ() {
     {
       question: "How quickly will I receive a response?",
       answer:
-        "LCP Careers is available for enquiries 24 hours a day. Response timing can vary depending on the nature and volume of enquiries, so the specific response window should be confirmed as part of your contact process.",
+        "LPC Careers is available for enquiries 24 hours a day. Response timing can vary depending on the nature and volume of enquiries, so the specific response window should be confirmed as part of your contact process.",
     },
     {
-      question: "Can I contact LCP Careers outside normal business hours?",
+      question: "Can I contact LPC Careers outside normal business hours?",
       answer:
         "Yes. Enquiries can be submitted at any time. This does not mean every enquiry will receive an immediate response, but you can reach out whenever it is convenient for you.",
     },
@@ -32,7 +32,7 @@ function ContactFAQ() {
     {
       question: "Do you work with international clients?",
       answer:
-        "Yes. LCP Careers can provide remote professional career support regardless of your location, subject to the service, communication requirements, and agreed engagement terms.",
+        "Yes. LPC Careers can provide remote professional career support regardless of your location, subject to the service, communication requirements, and agreed engagement terms.",
     },
     {
       question: "What happens after I submit an enquiry?",
@@ -75,7 +75,7 @@ function ContactFAQ() {
           </h2>
 
           <p className="mt-5 text-base leading-7 text-slate-600 sm:text-[17px]">
-            A few answers about contacting LCP Careers, submitting an
+            A few answers about contacting LPC Careers, submitting an
             enquiry, and getting started.
           </p>
         </motion.div>

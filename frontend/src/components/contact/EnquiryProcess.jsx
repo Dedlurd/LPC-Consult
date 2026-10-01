@@ -20,7 +20,7 @@ function EnquiryProcess() {
       icon: SearchCheck,
       title: "We Review Your Request",
       description:
-        "LCP Careers reviews the information and identifies the most appropriate service or support path.",
+        "LPC Careers reviews the information and identifies the most appropriate service or support path.",
     },
     {
       number: "03",

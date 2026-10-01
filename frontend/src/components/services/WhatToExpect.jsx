@@ -82,7 +82,7 @@ function WhatToExpect() {
             className="max-w-2xl"
           >
             <p className="text-base leading-7 text-slate-600 sm:text-[17px]">
-              LCP Careers focuses on making the engagement clear,
+              LPC Careers focuses on making the engagement clear,
               professional, and tailored to the person behind the
               documents or career decision.
             </p>

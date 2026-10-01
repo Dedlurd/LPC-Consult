@@ -44,12 +44,12 @@ function ServicesFAQ() {
     {
       question: "Can I request an urgent or rush service?",
       answer:
-        "Rush requests may be considered depending on availability, service type, and workload. Contact LCP Careers before placing your request so the timing and any applicable arrangements can be confirmed.",
+        "Rush requests may be considered depending on availability, service type, and workload. Contact LPC Careers before placing your request so the timing and any applicable arrangements can be confirmed.",
     },
     {
       question: "How do I get started?",
       answer:
-        "Choose the service or package that best fits your needs, then contact LCP Careers with your requirements. You will be guided through the next steps and provided with the information needed to begin.",
+        "Choose the service or package that best fits your needs, then contact LPC Careers with your requirements. You will be guided through the next steps and provided with the information needed to begin.",
     },
   ];
 
@@ -181,7 +181,7 @@ function ServicesFAQ() {
               </h3>
 
               <p className="mt-3 max-w-2xl text-sm leading-6 text-slate-400 sm:text-base">
-                Every career situation is different. Contact LCP Careers
+                Every career situation is different. Contact LPC Careers
                 with your question and we can help you understand the
                 most appropriate next step.
               </p>
@@ -191,7 +191,7 @@ function ServicesFAQ() {
               to="/contact"
               className="group inline-flex shrink-0 items-center justify-center gap-2 rounded-lg bg-[#00B4D8] px-5 py-3.5 text-sm font-bold text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#009FC0] hover:shadow-lg hover:shadow-[#00B4D8]/20"
             >
-              Contact LCP Careers
+              Contact LPC Careers
 
               <ArrowUpRight
                 size={17}

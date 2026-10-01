@@ -79,7 +79,7 @@ function PortfolioHero() {
             >
               Explore selected examples of resumes, professional
               profiles, executive materials, and career-positioning work
-              developed by LCP Careers.
+              developed by LPC Careers.
             </motion.p>
 
             <motion.div

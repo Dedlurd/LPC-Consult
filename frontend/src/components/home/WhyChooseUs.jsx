@@ -56,7 +56,7 @@ function WhyChooseUs() {
               <span className="h-px w-8 bg-[#00B4D8]" />
 
               <span className="text-xs font-bold uppercase tracking-[0.18em] text-[#00B4D8]">
-                Why Choose  LCP Careers
+                Why Choose  LPC Careers
               </span>
             </div>
 
@@ -73,7 +73,7 @@ function WhyChooseUs() {
             className="max-w-2xl"
           >
             <p className="text-base leading-7 text-slate-600 sm:text-[17px]">
-              At  LCP Careers, we combine professional positioning with
+              At  LPC Careers, we combine professional positioning with
               practical career strategy. The focus is not simply on
               making your documents look better, but on helping you
               communicate your value with greater clarity.
@@ -83,7 +83,7 @@ function WhyChooseUs() {
               to="/about"
               className="group mt-5 inline-flex items-center gap-2 text-sm font-bold text-[#00B4D8] transition-colors hover:text-slate-900"
             >
-              Learn more about  LCP Careers
+              Learn more about  LPC Careers
 
               <ArrowUpRight
                 size={17}
@@ -153,7 +153,7 @@ function WhyChooseUs() {
             </p>
 
             <p className="mt-1 max-w-2xl text-sm leading-6 text-slate-400">
-              Let  LCP Careers help you turn your professional experience into
+              Let  LPC Careers help you turn your professional experience into
               a clearer and stronger career story.
             </p>
           </div>

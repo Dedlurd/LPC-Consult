@@ -55,7 +55,7 @@ function ResourcesHero() {
               <span className="h-px w-9 bg-[#00B4D8]" />
 
               <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#00B4D8]">
-                LCP Careers · Resources
+                LPC Careers · Resources
               </span>
             </motion.div>
 

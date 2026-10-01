@@ -173,7 +173,7 @@ function Resources() {
             </p>
 
             <p className="mt-1 text-sm leading-6 text-slate-600">
-              Explore the LCP Careers resource library for more
+              Explore the LPC Careers resource library for more
               professional insights and career guidance.
             </p>
           </div>

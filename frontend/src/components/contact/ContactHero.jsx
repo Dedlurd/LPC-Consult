@@ -55,7 +55,7 @@ function ContactHero() {
               <span className="h-px w-9 bg-[#00B4D8]" />
 
               <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#00B4D8]">
-                Contact LCP Careers
+                Contact LPC Careers
               </span>
             </motion.div>
 
@@ -79,7 +79,7 @@ function ContactHero() {
             >
               Tell us what you're working toward, where your current
               materials are falling short, and what kind of support
-              you're considering. LCP Careers will help you identify
+              you're considering. LPC Careers will help you identify
               the right place to begin.
             </motion.p>
 

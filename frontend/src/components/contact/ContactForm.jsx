@@ -6,7 +6,7 @@ import {
   FileText,
 } from "lucide-react";
 
-const CONTACT_EMAIL = "hello@lcpcareers.com";
+const CONTACT_EMAIL = "hello@lpccareers.com";
 
 function ContactForm() {
   const [formData, setFormData] = useState({
@@ -36,7 +36,7 @@ function ContactForm() {
     event.preventDefault();
 
     const subject = encodeURIComponent(
-      `LCP Careers Enquiry - ${formData.service || "Career Support"}`
+      `LPC Careers Enquiry - ${formData.service || "Career Support"}`
     );
 
     const body = encodeURIComponent(
@@ -412,7 +412,7 @@ function ContactForm() {
             <div className="mt-7 flex flex-col gap-4 border-t border-slate-100 pt-6 sm:flex-row sm:items-center sm:justify-between">
               <p className="max-w-md text-xs leading-5 text-slate-400">
                 Selecting submit will open your default email app with
-                your enquiry prepared for LCP Careers.
+                your enquiry prepared for LPC Careers.
               </p>
 
               <button

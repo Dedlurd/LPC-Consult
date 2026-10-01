@@ -8,7 +8,7 @@ function PortfolioTestimonials() {
   const testimonials = [
     {
       quote:
-        "Replace this with a genuine client testimonial describing their experience with LCP Careers.",
+        "Replace this with a genuine client testimonial describing their experience with LPC Careers.",
       name: "Client Name",
       role: "Professional Title · Industry",
       service: "Resume Writing",
@@ -22,7 +22,7 @@ function PortfolioTestimonials() {
     },
     {
       quote:
-        "Replace this with a genuine client testimonial approved for publication on the LCP Careers website.",
+        "Replace this with a genuine client testimonial approved for publication on the LPC Careers website.",
       name: "Client Name",
       role: "Professional Title · Industry",
       service: "Career Package",
@@ -60,7 +60,7 @@ function PortfolioTestimonials() {
 
           <p className="mt-5 max-w-2xl text-base leading-7 text-slate-600 sm:text-[17px]">
             Genuine client feedback gives prospective clients a better
-            understanding of what it is like to work with LCP Careers.
+            understanding of what it is like to work with LPC Careers.
           </p>
         </motion.div>
 

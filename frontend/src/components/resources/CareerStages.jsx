@@ -72,7 +72,7 @@ function CareerStages() {
               to="/contact"
               className="group mt-7 inline-flex items-center gap-2 text-sm font-bold text-[#00B4D8] transition-colors hover:text-slate-900"
             >
-              Talk to LCP Careers
+              Talk to LPC Careers
 
               <ArrowUpRight
                 size={17}

@@ -13,7 +13,7 @@ function Results() {
       name: "Client Name",
       role: "Marketing Professional",
       quote:
-        "LCP Careers helped me present my experience in a much clearer and more professional way. I now feel more confident about how I communicate my value.",
+        "LPC Careers helped me present my experience in a much clearer and more professional way. I now feel more confident about how I communicate my value.",
     },
     {
       name: "Client Name",

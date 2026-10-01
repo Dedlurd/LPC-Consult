@@ -74,7 +74,7 @@ function HowItWorks() {
             <p className="text-base leading-7 text-slate-600 sm:text-[17px]">
               We keep the process clear and focused so you understand
               what happens at every stage of your engagement with
-              LCP Careers.
+              LPC Careers.
             </p>
           </motion.div>
         </div>
@@ -151,7 +151,7 @@ function HowItWorks() {
               </h3>
 
               <p className="mt-3 max-w-2xl text-sm leading-6 text-slate-400 sm:text-base">
-                LCP Careers aims to keep every engagement organized,
+                LPC Careers aims to keep every engagement organized,
                 transparent, and easy to follow from the initial request
                 through final delivery.
               </p>

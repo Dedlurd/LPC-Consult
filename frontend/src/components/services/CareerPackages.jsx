@@ -296,7 +296,7 @@ function CareerPackages() {
             </p>
 
             <p className="mt-2 max-w-2xl text-sm leading-6 text-slate-400">
-              Share your current career situation with LCP Careers and
+              Share your current career situation with LPC Careers and
               we can help you identify the most appropriate level of
               support.
             </p>

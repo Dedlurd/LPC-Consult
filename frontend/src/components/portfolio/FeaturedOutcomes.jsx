@@ -68,7 +68,7 @@ function FeaturedOutcomes() {
 
           <p className="mt-5 max-w-2xl text-base leading-7 text-slate-600 sm:text-[17px]">
             Each project starts with a different challenge. These
-            examples show how LCP Careers approaches positioning,
+            examples show how LPC Careers approaches positioning,
             professional storytelling, and presentation.
           </p>
         </motion.div>

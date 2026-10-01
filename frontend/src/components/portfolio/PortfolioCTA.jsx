@@ -10,7 +10,7 @@ function PortfolioCTA() {
   const points = [
     "Start with a free professional review",
     "Choose the service that fits your situation",
-    "Get clear next steps from LCP Careers",
+    "Get clear next steps from LPC Careers",
   ];
 
   return (
@@ -51,7 +51,7 @@ function PortfolioCTA() {
 
             <p className="mt-5 max-w-2xl text-base leading-7 text-slate-300 sm:text-[17px] sm:leading-8">
               Tell us where you are in your career and what you are
-              trying to achieve. LCP Careers can help you identify the
+              trying to achieve. LPC Careers can help you identify the
               right starting point and move forward with a clearer
               professional direction.
             </p>
@@ -129,7 +129,7 @@ function PortfolioCTA() {
                   to="/contact"
                   className="group inline-flex items-center gap-2 text-sm font-bold text-white"
                 >
-                  Speak with LCP Careers
+                  Speak with LPC Careers
 
                   <MessageCircle
                     size={17}

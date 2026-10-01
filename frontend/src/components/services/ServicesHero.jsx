@@ -66,7 +66,7 @@ function ServicesHero() {
               <span className="h-px w-9 bg-[#00B4D8]" />
 
               <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#00B4D8]">
-                LCP Careers · Services
+                LPC Careers · Services
               </span>
             </motion.div>
 
@@ -98,7 +98,7 @@ function ServicesHero() {
               className="mt-6 max-w-2xl text-base leading-7 text-slate-300 sm:text-lg sm:leading-8"
             >
               From professionally written career documents to
-              strategic positioning, LCP Careers provides focused
+              strategic positioning, LPC Careers provides focused
               support for professionals who need their experience to
               communicate clearly and credibly.
             </motion.p>
