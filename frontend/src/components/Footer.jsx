@@ -40,7 +40,7 @@ function Footer() {
               </span>
 
               <span className="text-lg font-extrabold tracking-tight text-slate-900">
-                 LCP
+                 LPC
                 <span className="ml-1 text-[#00B4D8]">
                   CAREERS
                 </span>

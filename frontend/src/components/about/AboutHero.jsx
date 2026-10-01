@@ -57,7 +57,7 @@ function AboutHero() {
               <span className="h-px w-9 bg-[#00B4D8]" />
 
               <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#00B4D8]">
-                About LCP Careers
+                About LPC Careers
               </span>
             </motion.div>
 
@@ -87,7 +87,7 @@ function AboutHero() {
               }}
               className="mt-6 max-w-2xl text-base leading-7 text-slate-300 sm:text-lg sm:leading-8"
             >
-              LCP Careers helps professionals turn experience,
+              LPC Careers helps professionals turn experience,
               achievements, and career ambitions into clearer
               professional positioning that is easier to understand,
               trust, and remember.

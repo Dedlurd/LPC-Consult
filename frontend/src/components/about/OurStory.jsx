@@ -83,7 +83,7 @@ function OurStory() {
               className="absolute bottom-5 left-5 rounded-xl border border-white/30 bg-white/90 px-5 py-4 shadow-lg backdrop-blur-md sm:bottom-6 sm:left-6"
             >
               <p className="text-xs font-bold uppercase tracking-[0.12em] text-[#00B4D8]">
-                The LCP Careers Approach
+                The LPC Careers Approach
               </p>
 
               <p className="mt-1 text-sm font-bold text-slate-950">
@@ -114,7 +114,7 @@ function OurStory() {
             </p>
 
             <p className="mt-4 text-base leading-7 text-slate-600">
-              LCP Careers was built around a different approach: first
+              LPC Careers was built around a different approach: first
               understand the professional, then define the message, and
               only after that shape the final presentation. The goal is
               to create materials that communicate experience with

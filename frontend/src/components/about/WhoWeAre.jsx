@@ -92,7 +92,7 @@ function WhoWeAre() {
               </h2>
 
               <p className="mt-5 max-w-2xl text-base leading-7 text-slate-600 sm:text-[17px]">
-                LCP Careers exists to help professionals communicate
+                LPC Careers exists to help professionals communicate
                 their value more effectively. We work across resumes,
                 LinkedIn profiles, executive biographies, and broader
                 career strategy to create a clearer connection between

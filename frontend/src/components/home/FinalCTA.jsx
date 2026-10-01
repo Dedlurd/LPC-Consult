@@ -43,7 +43,7 @@ function FinalCTA() {
             </h2>
 
             <p className="mt-5 max-w-xl text-base leading-7 text-white/85 sm:text-[17px]">
-              Your experience has value. Let LCP Careers help you
+              Your experience has value. Let LPC Careers help you
               communicate it clearly, strengthen your professional
               positioning, and approach your next opportunity with
               greater direction.
@@ -70,7 +70,7 @@ function FinalCTA() {
               >
                 <MessageCircle size={17} strokeWidth={2} />
 
-                Contact LCP Careers
+                Contact LPC Careers
               </Link>
             </div>
           </motion.div>

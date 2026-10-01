@@ -141,7 +141,7 @@ function Intro() {
                 to="/about"
                 className="group inline-flex items-center gap-2 text-sm font-bold text-[#00B4D8] transition-colors duration-300 hover:text-slate-900"
               >
-                Discover  LCP Careers
+                Discover  LPC Careers
 
                 <ArrowUpRight
                   size={17}

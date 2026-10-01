@@ -37,7 +37,7 @@ function Hero() {
               <span className="h-px w-8 bg-[#00B4D8]" />
 
               <span className="text-xs font-bold uppercase tracking-[0.18em] text-[#0077B6]">
-                 LCP Careers
+                 LPC Careers
               </span>
             </motion.div>
 
@@ -211,7 +211,7 @@ function Hero() {
               to="/about"
               className="group inline-flex items-center gap-1.5 text-sm font-semibold text-slate-700 transition-colors hover:text-[#0077B6]"
             >
-              About  LCP Careers
+              About LPC Careers
 
               <ArrowUpRight
                 size={15}
