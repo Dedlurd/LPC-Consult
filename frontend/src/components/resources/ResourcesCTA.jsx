@@ -127,7 +127,7 @@ function ResourcesCTA() {
               </div>
 
               <a
-                href="mailto:hello@lpccareers.com?subject=Career%20Insights%20Newsletter"
+                href="mailto:support@lpccareers.com?subject=Career%20Insights%20Newsletter"
                 className="mt-7 inline-flex w-full items-center justify-center gap-2 rounded-lg border border-white/20 bg-white/10 px-5 py-3.5 text-sm font-bold text-white transition-all duration-300 hover:border-white/40 hover:bg-white/15"
               >
                 Join by Email

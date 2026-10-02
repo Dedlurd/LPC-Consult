@@ -14,7 +14,7 @@ function ContactInformationAndReview() {
     {
       icon: Mail,
       label: "Email",
-      value: "hello@lpccareers.com",
+      value: "support@lpccareers.com",
     },
     {
       icon: Clock3,
@@ -88,7 +88,7 @@ function ContactInformationAndReview() {
 
                       {item.label === "Email" ? (
                         <a
-                          href="mailto:hello@lpccareers.com"
+                          href="mailto:support@lpccareers.com"
                           className="mt-1 block text-sm font-bold text-slate-950 transition-colors hover:text-[#00B4D8]"
                         >
                           {item.value}
@@ -116,7 +116,7 @@ function ContactInformationAndReview() {
             </div>
 
             <a
-              href="mailto:hello@lpccareers.com"
+              href="mailto:support@lpccareers.com"
               className="group mt-7 inline-flex items-center gap-2 text-sm font-bold text-[#00B4D8] transition-colors hover:text-slate-900"
             >
               Send an email
