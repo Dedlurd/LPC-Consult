@@ -6,7 +6,7 @@ import {
   FileText,
 } from "lucide-react";
 
-const CONTACT_EMAIL = "hello@lpccareers.com";
+const CONTACT_EMAIL = "support@lpccareers.com";
 
 function ContactForm() {
   const [formData, setFormData] = useState({
