@@ -154,7 +154,7 @@ function Header() {
               className="hidden md:block"
             >
               <Link
-                to="/free-review"
+                to="/contact#enquiry"
                 className="group flex items-center gap-2 rounded-xl bg-[#00B4D8] px-5 py-3 text-sm font-bold text-white shadow-[0_6px_20px_rgba(0,180,216,0.25)] transition-all duration-300 hover:bg-[#009fc0] hover:shadow-[0_8px_25px_rgba(0,180,216,0.3)]"
               >
                 Free Review
@@ -357,7 +357,7 @@ function Header() {
                   }}
                 >
                   <Link
-                    to="/free-review"
+                    to="/contact#enquiry"
                     onClick={closeMenu}
                     className="group flex items-center justify-between rounded-xl bg-[#00B4D8] px-5 py-4 font-bold text-white shadow-[0_8px_25px_rgba(0,180,216,0.2)] transition-all duration-300 hover:bg-[#009fc0]"
                   >

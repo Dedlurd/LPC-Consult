@@ -159,7 +159,7 @@ function WhyChooseUs() {
           </div>
 
           <Link
-            to="/free-review"
+            to="/contact#enquiry"
             className="group inline-flex shrink-0 items-center justify-center gap-2 rounded-lg bg-[#00B4D8] px-5 py-3 text-sm font-bold text-white transition-all duration-300 hover:bg-[#009FC0] hover:shadow-lg hover:shadow-[#00B4D8]/20"
           >
             Get a Free Review

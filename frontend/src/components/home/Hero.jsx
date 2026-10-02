@@ -83,7 +83,7 @@ function Hero() {
               className="mt-7 flex flex-col gap-3 sm:flex-row"
             >
               <Link
-                to="/free-review"
+                to="/contact#enquiry"
                 className="group inline-flex items-center justify-center gap-2 rounded-lg bg-[#00B4D8] px-5 py-3.5 text-sm font-bold text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#009FC0] hover:shadow-lg hover:shadow-[#00B4D8]/20"
               >
                 Get a Free Review

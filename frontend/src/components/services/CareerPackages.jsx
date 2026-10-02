@@ -304,7 +304,7 @@ function CareerPackages() {
 
           <div className="flex items-center">
             <Link
-              to="/free-review"
+              to="/contact#enquiry"
               className="group inline-flex items-center justify-center gap-2 rounded-lg bg-[#00B4D8] px-5 py-3.5 text-sm font-bold text-white transition-all duration-300 hover:bg-[#009FC0]"
             >
               Get a Free Review

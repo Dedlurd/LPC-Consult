@@ -13,12 +13,12 @@ function ContactHero() {
     {
       icon: Clock3,
       title: "Available 24 Hours",
-      text: "Reach out when you need support",
+      text: "Enquiries can be submitted anytime",
     },
     {
       icon: Timer,
       title: "1–3 Day Delivery",
-      text: "Standard turnaround",
+      text: "Standard turnaround based on scope",
     },
     {
       icon: FileText,
@@ -29,6 +29,7 @@ function ContactHero() {
 
   return (
     <section className="relative min-h-[760px] overflow-hidden bg-slate-950">
+      {/* Background image */}
       <div className="absolute inset-0">
         <img
           src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=2000&q=85"
@@ -62,10 +63,13 @@ function ContactHero() {
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7, delay: 0.1 }}
+              transition={{
+                duration: 0.7,
+                delay: 0.1,
+              }}
               className="mt-6 max-w-4xl text-4xl font-bold leading-[1.05] tracking-[-0.035em] text-white sm:text-5xl lg:text-[64px]"
             >
-              Let's talk about where your{" "}
+              Let&apos;s talk about where your{" "}
               <span className="text-[#00B4D8]">
                 career is going next.
               </span>
@@ -74,19 +78,25 @@ function ContactHero() {
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.25 }}
+              transition={{
+                duration: 0.6,
+                delay: 0.25,
+              }}
               className="mt-6 max-w-2xl text-base leading-7 text-slate-300 sm:text-lg sm:leading-8"
             >
-              Tell us what you're working toward, where your current
-              materials are falling short, and what kind of support
-              you're considering. LPC Careers will help you identify
-              the right place to begin.
+              Tell us what you&apos;re working toward, where your current
+              materials are falling short, and what kind of support you
+              are considering. LPC Careers will help you identify the
+              right place to begin.
             </motion.p>
 
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.35 }}
+              transition={{
+                duration: 0.6,
+                delay: 0.35,
+              }}
               className="mt-8 flex flex-col gap-3 sm:flex-row"
             >
               <a
@@ -103,7 +113,7 @@ function ContactHero() {
               </a>
 
               <Link
-                to="/free-review"
+                to="/contact#enquiry"
                 className="group inline-flex items-center justify-center gap-2 rounded-lg border border-white/25 bg-white/10 px-6 py-3.5 text-sm font-bold text-white backdrop-blur-sm transition-all duration-300 hover:-translate-y-0.5 hover:border-white/50 hover:bg-white/15"
               >
                 Get a Free Review
@@ -119,7 +129,10 @@ function ContactHero() {
           <motion.div
             initial={{ opacity: 0, y: 25 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.5 }}
+            transition={{
+              duration: 0.7,
+              delay: 0.5,
+            }}
             className="mt-14 border-t border-white/15 pt-6 lg:mt-20"
           >
             <div className="grid gap-5 sm:grid-cols-3">

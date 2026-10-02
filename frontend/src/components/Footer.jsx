@@ -18,7 +18,7 @@ function Footer() {
   const resourceLinks = [
     { name: "Resources", path: "/resources" },
     { name: "Contact", path: "/contact" },
-    { name: "Free Review", path: "/free-review" },
+    { name: "Free Review", path: "/contact#enquiry" },
   ];
 
   return (
@@ -54,7 +54,7 @@ function Footer() {
             </p>
 
             <Link
-              to="/free-review"
+              to="/contact#enquiry"
               className="group mt-6 inline-flex items-center gap-2 text-sm font-bold text-slate-900 transition-colors hover:text-[#00B4D8]"
             >
               Start with a free review

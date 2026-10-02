@@ -10,39 +10,39 @@ function ContactFAQ() {
 
   const faqs = [
     {
-      question: "How quickly will I receive a response?",
+      question: "How quickly can I expect a response?",
       answer:
-        "LPC Careers is available for enquiries 24 hours a day. Response timing can vary depending on the nature and volume of enquiries, so the specific response window should be confirmed as part of your contact process.",
+        "Enquiries can be submitted 24 hours a day. Response timing depends on the nature and volume of enquiries, and the expected response window can be confirmed through the contact process.",
     },
     {
       question: "Can I contact LPC Careers outside normal business hours?",
       answer:
-        "Yes. Enquiries can be submitted at any time. This does not mean every enquiry will receive an immediate response, but you can reach out whenever it is convenient for you.",
+        "Yes. You can submit an enquiry at any time. Twenty-four-hour availability means you can reach out whenever it is convenient for you; it does not necessarily mean every enquiry receives an immediate response.",
     },
     {
       question: "Can I request a 24-hour service?",
       answer:
-        "Rush requests can be considered depending on availability, service type, scope, and deadline. Tell us your required delivery date when submitting your enquiry so availability can be assessed.",
+        "Rush requests may be considered depending on availability, service type, scope, and deadline. Include your required date in your enquiry so availability can be assessed.",
     },
     {
-      question: "How do I send my resume for a free review?",
+      question: "How do I submit my resume for a free review?",
       answer:
-        "You can start through the Free Career Review page. The review process will provide the appropriate instructions for submitting your current resume and any relevant context.",
+        "Start through the Free Review option on this page. The review process will provide the appropriate instructions for submitting your current resume and relevant career context.",
     },
     {
-      question: "Do you work with international clients?",
+      question: "Do you work with clients in different locations?",
       answer:
-        "Yes. LPC Careers can provide remote professional career support regardless of your location, subject to the service, communication requirements, and agreed engagement terms.",
+        "Yes. LPC Careers provides remote professional career support, so clients can engage with the service regardless of location, subject to the agreed service requirements.",
     },
     {
       question: "What happens after I submit an enquiry?",
       answer:
-        "Your request is reviewed to understand what you are targeting and what type of support is most relevant. You can then be guided on the recommended service, scope, timing, and next steps.",
+        "Your enquiry is reviewed to understand what you are targeting and what kind of support is most appropriate. You can then receive guidance on the relevant service, scope, timing, and next steps.",
     },
     {
       question: "How is my information handled?",
       answer:
-        "Career information and documents should be handled with professional discretion and used for the purpose of the requested service or enquiry. Specific privacy terms should be published once your site's privacy policy is finalized.",
+        "Information and documents shared during an enquiry should be handled with professional discretion and used for the purpose of the requested service or communication. Your final privacy policy should provide the complete legal terms for the website.",
     },
   ];
 
@@ -51,7 +51,7 @@ function ContactFAQ() {
   };
 
   return (
-    <section className="bg-white py-20 sm:py-24 lg:py-28">
+    <section className="bg-slate-50 py-20 sm:py-24 lg:py-28">
       <div className="mx-auto max-w-5xl px-5 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -71,12 +71,12 @@ function ContactFAQ() {
           </div>
 
           <h2 className="mt-5 text-3xl font-bold leading-tight tracking-[-0.03em] text-slate-950 sm:text-4xl">
-            Before you write to us.
+            Before you reach out.
           </h2>
 
           <p className="mt-5 text-base leading-7 text-slate-600 sm:text-[17px]">
-            A few answers about contacting LPC Careers, submitting an
-            enquiry, and getting started.
+            A few practical answers about contacting LPC Careers,
+            turnaround, reviews, and the next steps after an enquiry.
           </p>
         </motion.div>
 
@@ -94,7 +94,7 @@ function ContactFAQ() {
                   duration: 0.45,
                   delay: index * 0.04,
                 }}
-                className={`overflow-hidden rounded-2xl border transition-all duration-300 ${
+                className={`overflow-hidden rounded-2xl border bg-white transition-all duration-300 ${
                   isOpen
                     ? "border-[#00B4D8]/50 shadow-[0_12px_35px_rgba(0,0,0,0.05)]"
                     : "border-slate-200"

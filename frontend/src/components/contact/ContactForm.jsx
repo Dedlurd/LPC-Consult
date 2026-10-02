@@ -36,7 +36,9 @@ function ContactForm() {
     event.preventDefault();
 
     const subject = encodeURIComponent(
-      `LPC Careers Enquiry - ${formData.service || "Career Support"}`
+      `LPC Careers Enquiry - ${
+        formData.service || "Career Support"
+      }`
     );
 
     const body = encodeURIComponent(
@@ -47,7 +49,9 @@ function ContactForm() {
         `LinkedIn: ${formData.linkedin || "Not provided"}`,
         `Service: ${formData.service}`,
         `Career Level: ${formData.careerLevel || "Not provided"}`,
-        `Target Role / Opportunity: ${formData.targetRole || "Not provided"}`,
+        `Target Role / Opportunity: ${
+          formData.targetRole || "Not provided"
+        }`,
         `Target Deadline: ${formData.deadline || "Not provided"}`,
         "",
         "Message:",
@@ -55,7 +59,8 @@ function ContactForm() {
       ].join("\n")
     );
 
-    window.location.href = `mailto:${CONTACT_EMAIL}?subject=${subject}&body=${body}`;
+    window.location.href =
+      `mailto:${CONTACT_EMAIL}?subject=${subject}&body=${body}`;
 
     setSubmitted(true);
   };
@@ -66,11 +71,10 @@ function ContactForm() {
   return (
     <section
       id="enquiry"
-      className="bg-white py-20 sm:py-24 lg:py-28"
+      className="scroll-mt-32 bg-white py-20 sm:py-24 lg:py-28"
     >
       <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
-        {/* Heading */}
-        <div className="grid gap-8 lg:grid-cols-[0.75fr_1.25fr] lg:items-end">
+        <div className="grid gap-8 lg:grid-cols-[0.72fr_1.28fr] lg:items-end">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -81,7 +85,7 @@ function ContactForm() {
               <span className="h-px w-8 bg-[#00B4D8]" />
 
               <span className="text-xs font-bold uppercase tracking-[0.18em] text-[#00B4D8]">
-                Start Your Enquiry
+                Send an Enquiry
               </span>
             </div>
 
@@ -104,7 +108,7 @@ function ContactForm() {
         </div>
 
         <div className="mt-12 grid gap-0 overflow-hidden rounded-2xl border border-slate-200 bg-slate-50 lg:grid-cols-[0.72fr_1.28fr]">
-          {/* Information Panel */}
+          {/* Information panel */}
           <div className="bg-slate-950 p-6 sm:p-8 lg:p-10">
             <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#00B4D8]">
               Before You Submit
@@ -132,7 +136,10 @@ function ContactForm() {
                   className="flex items-start gap-3"
                 >
                   <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#00B4D8]/15 text-[#00B4D8]">
-                    <CheckCircle2 size={15} strokeWidth={2.2} />
+                    <CheckCircle2
+                      size={15}
+                      strokeWidth={2.2}
+                    />
                   </span>
 
                   <p className="text-sm leading-6 text-slate-300">
@@ -288,7 +295,7 @@ function ContactForm() {
                   <option value="Executive Leadership Profile">
                     Executive Leadership Profile
                   </option>
-                  <option value="ECQ">
+                  <option value="Executive Core Qualifications (ECQ)">
                     Executive Core Qualifications (ECQ)
                   </option>
                   <option value="Interview Preparation">
@@ -411,8 +418,8 @@ function ContactForm() {
 
             <div className="mt-7 flex flex-col gap-4 border-t border-slate-100 pt-6 sm:flex-row sm:items-center sm:justify-between">
               <p className="max-w-md text-xs leading-5 text-slate-400">
-                Selecting submit will open your default email app with
-                your enquiry prepared for LPC Careers.
+                Selecting submit will open your default email
+                application with your enquiry prepared for LPC Careers.
               </p>
 
               <button

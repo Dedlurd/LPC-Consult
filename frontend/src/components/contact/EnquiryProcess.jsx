@@ -54,8 +54,8 @@ function EnquiryProcess() {
           </h2>
 
           <p className="mt-5 max-w-2xl text-base leading-7 text-slate-600 sm:text-[17px]">
-            You don't need to know exactly which service you need
-            before reaching out. Start with your situation and we'll
+            You do not need to know exactly which service you need
+            before reaching out. Start with your situation and we&apos;ll
             work from there.
           </p>
         </motion.div>
