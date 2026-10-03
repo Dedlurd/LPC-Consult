@@ -3,8 +3,8 @@ import { motion } from "motion/react";
 import {
   ArrowUpRight,
   Mail,
-  MapPin,
-  Phone,
+  Globe2,
+  BriefcaseBusiness,
 } from "lucide-react";
 
 function Footer() {
@@ -21,10 +21,14 @@ function Footer() {
     { name: "Free Review", path: "/contact#enquiry" },
   ];
 
+  const linkedinUrl =
+    "https://www.linkedin.com/in/luna-patricia-cprw-mrw-41905a1b2p45bb/";
+
   return (
     <footer className="border-t border-slate-200 bg-white">
       <div className="mx-auto max-w-7xl px-5 py-14 sm:px-6 lg:px-8 lg:py-16">
         <div className="grid gap-12 lg:grid-cols-[1.4fr_0.7fr_0.7fr_1fr]">
+          {/* Brand */}
           <motion.div
             initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -40,7 +44,7 @@ function Footer() {
               </span>
 
               <span className="text-lg font-extrabold tracking-tight text-slate-900">
-                 LPC
+                LCP
                 <span className="ml-1 text-[#00B4D8]">
                   CAREERS
                 </span>
@@ -58,13 +62,16 @@ function Footer() {
               className="group mt-6 inline-flex items-center gap-2 text-sm font-bold text-slate-900 transition-colors hover:text-[#00B4D8]"
             >
               Start with a free review
+
               <ArrowUpRight
                 size={16}
+                strokeWidth={2.3}
                 className="transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
               />
             </Link>
           </motion.div>
 
+          {/* Company */}
           <motion.div
             initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -88,6 +95,7 @@ function Footer() {
             </div>
           </motion.div>
 
+          {/* Explore */}
           <motion.div
             initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -111,6 +119,7 @@ function Footer() {
             </div>
           </motion.div>
 
+          {/* Get In Touch */}
           <motion.div
             initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -122,48 +131,64 @@ function Footer() {
             </h3>
 
             <div className="mt-5 space-y-4">
-              <div className="flex items-start gap-3">
+              {/* Email */}
+              <a
+                href="mailto:support@lpccareers.com"
+                className="group flex items-start gap-3"
+              >
                 <Mail
                   size={17}
                   className="mt-0.5 shrink-0 text-[#00B4D8]"
                 />
 
-                <span className="text-sm leading-6 text-slate-500">
-                  Professional career support and consultation
+                <span className="text-sm leading-6 text-slate-500 transition-colors group-hover:text-[#00B4D8]">
+                  support@lpccareers.com
                 </span>
-              </div>
+              </a>
 
+              {/* Worldwide */}
               <div className="flex items-start gap-3">
-                <MapPin
+                <Globe2
                   size={17}
                   className="mt-0.5 shrink-0 text-[#00B4D8]"
                 />
 
                 <span className="text-sm leading-6 text-slate-500">
-                   LPC Careers
+                  Worldwide
                 </span>
               </div>
 
-              <div className="flex items-start gap-3">
-                <Phone
+              {/* LinkedIn */}
+              <a
+                href={linkedinUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex items-start gap-3"
+                aria-label="Visit LCP Careers on LinkedIn"
+              >
+                <BriefcaseBusiness
                   size={17}
                   className="mt-0.5 shrink-0 text-[#00B4D8]"
                 />
 
-                <Link
-                  to="/contact"
-                  className="text-sm leading-6 text-slate-500 transition-colors hover:text-[#00B4D8]"
-                >
-                  Contact our team
-                </Link>
-              </div>
+                <span className="inline-flex items-center gap-1.5 text-sm leading-6 text-slate-500 transition-colors group-hover:text-[#00B4D8]">
+                  LinkedIn
+
+                  <ArrowUpRight
+                    size={14}
+                    strokeWidth={2.2}
+                    className="transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
+                  />
+                </span>
+              </a>
             </div>
           </motion.div>
         </div>
 
+        {/* Bottom Bar */}
         <div className="mt-12 flex flex-col gap-4 border-t border-slate-200 pt-6 sm:flex-row sm:items-center sm:justify-between">
           <p className="text-xs text-slate-400">
-            © {new Date().getFullYear()}  LPC Careers. All rights reserved.
+            © {new Date().getFullYear()} LCP Careers. All rights reserved.
           </p>
 
           <p className="text-xs font-medium uppercase tracking-[0.12em] text-slate-400">

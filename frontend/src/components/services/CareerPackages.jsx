@@ -18,9 +18,9 @@ function CareerPackages() {
       icon: Rocket,
       description:
         "A focused package for building a stronger professional foundation before entering or advancing in the job market.",
-      price: "$549",
-      originalPrice: "$595",
-      savings: "$46",
+      price: "$525",
+      originalPrice: "$550",
+      savings: "$25",
       features: [
         "Basic Resume Writing",
         "Basic Cover Letter",
@@ -64,8 +64,8 @@ function CareerPackages() {
       icon: BriefcaseBusiness,
       description:
         "Built for professionals changing direction, pursuing a more competitive role, or preparing for a high-stakes job search.",
-      price: "$2,999",
-      originalPrice: "$3,379",
+      price: "$4,120",
+      originalPrice: "$4,500",
       savings: "$380",
       features: [
         "Professional Resume Writing",
@@ -81,9 +81,9 @@ function CareerPackages() {
       icon: Sparkles,
       description:
         "Our most comprehensive career positioning package for professionals who need their leadership experience presented consistently across every major touchpoint.",
-      price: "$4,999",
+      price: "$5,200",
       originalPrice: "$5,597",
-      savings: "$598",
+      savings: "$397",
       features: [
         "Executive Resume",
         "Executive Cover Letter",

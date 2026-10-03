@@ -30,7 +30,7 @@ function IndividualServices() {
       tiers: [
         {
           name: "Basic",
-          price: "$395",
+          price: "$350 - $500",
           description:
             "A focused professional resume for a clear target direction.",
           features: [
@@ -41,7 +41,7 @@ function IndividualServices() {
         },
         {
           name: "Professional",
-          price: "$749",
+          price: "$725 - $1,050",
           popular: true,
           description:
             "A deeper rewrite designed for stronger industry positioning.",
@@ -53,7 +53,7 @@ function IndividualServices() {
         },
         {
           name: "Executive",
-          price: "$1,250",
+          price: "$1,250 - $1,750",
           description:
             "Senior-level positioning for experienced professionals and leaders.",
           features: [
@@ -74,7 +74,7 @@ function IndividualServices() {
       tiers: [
         {
           name: "Basic",
-          price: "$200",
+          price: "$225 - $475",
           description:
             "A clear and professionally written application letter.",
           features: [
@@ -85,7 +85,7 @@ function IndividualServices() {
         },
         {
           name: "Professional",
-          price: "$375",
+          price: "$500 - $725",
           popular: true,
           description:
             "A more targeted letter built around the opportunity.",
@@ -97,7 +97,7 @@ function IndividualServices() {
         },
         {
           name: "Executive",
-          price: "$499",
+          price: "$775 - $1,050",
           description:
             "A refined application narrative for senior opportunities.",
           features: [
@@ -118,7 +118,7 @@ function IndividualServices() {
       tiers: [
         {
           name: "Basic",
-          price: "$495",
+          price: "$495 - $750",
           description:
             "The essential profile improvements for a stronger presence.",
           features: [
@@ -129,7 +129,7 @@ function IndividualServices() {
         },
         {
           name: "Professional",
-          price: "$1,050",
+          price: "$825 - $1,250",
           popular: true,
           description:
             "A deeper optimization for stronger professional positioning.",
@@ -141,7 +141,7 @@ function IndividualServices() {
         },
         {
           name: "Executive",
-          price: "$1,750",
+          price: "$1,450 - $1,950",
           description:
             "Comprehensive positioning for leaders and senior professionals.",
           features: [
@@ -162,7 +162,7 @@ function IndividualServices() {
       tiers: [
         {
           name: "Basic",
-          price: "$200",
+          price: "$250 - $475",
           description:
             "A concise biography for professional use.",
           features: [
@@ -173,7 +173,7 @@ function IndividualServices() {
         },
         {
           name: "Professional",
-          price: "$375",
+          price: "$500 - $750",
           popular: true,
           description:
             "A stronger biography for broader professional visibility.",
@@ -185,7 +185,7 @@ function IndividualServices() {
         },
         {
           name: "Executive",
-          price: "$499",
+          price: "$775 - $1,050",
           description:
             "A leadership-focused biography for senior professionals.",
           features: [
@@ -206,7 +206,7 @@ function IndividualServices() {
       tiers: [
         {
           name: "Basic",
-          price: "$200",
+          price: "$200 - $420",
           description:
             "Focused support for presenting your core competencies.",
           features: [
@@ -217,7 +217,7 @@ function IndividualServices() {
         },
         {
           name: "Professional",
-          price: "$375",
+          price: "$475 - $625",
           popular: true,
           description:
             "More detailed positioning around the role requirements.",
@@ -229,7 +229,7 @@ function IndividualServices() {
         },
         {
           name: "Executive",
-          price: "$499",
+          price: "$675 - $925",
           description:
             "A deeper approach for complex or senior-level applications.",
           features: [
@@ -250,7 +250,7 @@ function IndividualServices() {
       tiers: [
         {
           name: "Basic",
-          price: "$200",
+          price: "$225 - $475",
           description:
             "A clear statement built around your core story.",
           features: [
@@ -261,7 +261,7 @@ function IndividualServices() {
         },
         {
           name: "Professional",
-          price: "$375",
+          price: "$500 - $725",
           popular: true,
           description:
             "A more developed statement with stronger positioning.",
@@ -273,7 +273,7 @@ function IndividualServices() {
         },
         {
           name: "Executive",
-          price: "$499",
+          price: "$775 - $1,050",
           description:
             "A highly refined statement for complex applications.",
           features: [
@@ -294,7 +294,7 @@ function IndividualServices() {
       tiers: [
         {
           name: "Basic",
-          price: "$200",
+          price: "$225 - $475",
           description:
             "A polished letter built around your intended opportunity.",
           features: [
@@ -305,7 +305,7 @@ function IndividualServices() {
         },
         {
           name: "Professional",
-          price: "$375",
+          price: "$500 - $725",
           popular: true,
           description:
             "A more tailored version with stronger context and positioning.",
@@ -317,7 +317,7 @@ function IndividualServices() {
         },
         {
           name: "Executive",
-          price: "$499",
+          price: "$775 - $1,050",
           description:
             "A refined statement for senior or high-impact opportunities.",
           features: [
@@ -338,7 +338,7 @@ function IndividualServices() {
       tiers: [
         {
           name: "Basic",
-          price: "$200",
+          price: "$325 - $575",
           description:
             "A structured leadership profile for professional use.",
           features: [
@@ -349,7 +349,7 @@ function IndividualServices() {
         },
         {
           name: "Professional",
-          price: "$375",
+          price: "$600 - $875",
           popular: true,
           description:
             "A more comprehensive profile for senior professionals.",
@@ -361,7 +361,7 @@ function IndividualServices() {
         },
         {
           name: "Executive",
-          price: "$499",
+          price: "$925 - $1,250",
           description:
             "A highly polished profile for senior leadership positioning.",
           features: [
@@ -382,7 +382,7 @@ function IndividualServices() {
       tiers: [
         {
           name: "Basic",
-          price: "$300",
+          price: "$325 - $575",
           description:
             "A clear foundation for presenting your executive qualifications.",
           features: [
@@ -393,7 +393,7 @@ function IndividualServices() {
         },
         {
           name: "Professional",
-          price: "$499",
+          price: "$600 - $875",
           popular: true,
           description:
             "Stronger development around executive leadership evidence.",
@@ -405,7 +405,7 @@ function IndividualServices() {
         },
         {
           name: "Executive",
-          price: "$749",
+          price: "$925 - $1,250",
           description:
             "Comprehensive executive-level positioning and narrative development.",
           features: [
@@ -426,7 +426,7 @@ function IndividualServices() {
       tiers: [
         {
           name: "Basic",
-          price: "$500",
+          price: "$500 - $725",
           description:
             "Focused preparation around your target interview.",
           features: [
@@ -437,7 +437,7 @@ function IndividualServices() {
         },
         {
           name: "Professional Coaching",
-          price: "$705",
+          price: "$805 - $1,350",
           popular: true,
           description:
             "More comprehensive preparation with deeper coaching support.",
@@ -449,7 +449,7 @@ function IndividualServices() {
         },
         {
           name: "Executive Coaching",
-          price: "$1,099",
+          price: "$1,225 - $2,225",
           description:
             "High-level coaching for leadership and executive interviews.",
           features: [
@@ -470,7 +470,7 @@ function IndividualServices() {
       tiers: [
         {
           name: "Basic",
-          price: "$10",
+          price: "$225 - $375",
           description:
             "A simple starting point for organizing your search.",
           features: [
@@ -481,7 +481,7 @@ function IndividualServices() {
         },
         {
           name: "Professional",
-          price: "$15",
+          price: "$425 - $625",
           popular: true,
           description:
             "Broader support for a more structured job search.",
@@ -493,7 +493,7 @@ function IndividualServices() {
         },
         {
           name: "Executive",
-          price: "$20",
+          price: "$675 - $1,050",
           description:
             "A focused search approach for senior-level opportunities.",
           features: [

@@ -1,274 +1,180 @@
 import { Link } from "react-router-dom";
-import { motion, useInView } from "motion/react";
+import { motion } from "motion/react";
 import {
-  ArrowUpRight,
   FileText,
-  UserRound,
-  Compass,
   BriefcaseBusiness,
+  UserRound,
+  Target,
+  ArrowUpRight,
 } from "lucide-react";
-import { useEffect, useRef, useState } from "react";
-
-function Counter({ value, suffix = "", duration = 1.8 }) {
-  const ref = useRef(null);
-
-  const isInView = useInView(ref, {
-    once: true,
-    amount: 0.6,
-  });
-
-  const [count, setCount] = useState(0);
-
-  useEffect(() => {
-    if (!isInView) return;
-
-    const startTime = performance.now();
-    let animationFrame;
-
-    const updateCounter = (currentTime) => {
-      const elapsed = currentTime - startTime;
-      const progress = Math.min(
-        elapsed / (duration * 1000),
-        1
-      );
-
-      const easedProgress =
-        1 - Math.pow(1 - progress, 3);
-
-      setCount(Math.floor(value * easedProgress));
-
-      if (progress < 1) {
-        animationFrame = requestAnimationFrame(updateCounter);
-      } else {
-        setCount(value);
-      }
-    };
-
-    animationFrame = requestAnimationFrame(updateCounter);
-
-    return () => cancelAnimationFrame(animationFrame);
-  }, [isInView, value, duration]);
-
-  return (
-    <span ref={ref}>
-      {count.toLocaleString()}
-      {suffix}
-    </span>
-  );
-}
 
 function Services() {
   const services = [
     {
-      icon: FileText,
+      number: "01",
       title: "Resume Writing",
       description:
-        "Professionally structured resumes that communicate your experience clearly and position you for your target opportunities.",
+        "Transform your experience into a clear, professional resume that highlights relevant achievements, strengths, and career direction.",
       price: "From $200",
+      icon: FileText,
     },
     {
-      icon: BriefcaseBusiness,
+      number: "02",
       title: "LinkedIn Profile Optimization",
       description:
-        "Strategic profile improvements that strengthen your professional presence and make your LinkedIn profile work harder for you.",
+        "Strengthen your professional presence with a LinkedIn profile that communicates your expertise, positioning, and value more clearly.",
       price: "From $200",
+      icon: BriefcaseBusiness,
     },
     {
-      icon: UserRound,
+      number: "03",
       title: "Executive Bio",
       description:
-        "Concise, professional executive biographies designed for leadership profiles, company websites, speaking engagements, and professional platforms.",
+        "Develop a polished professional biography that communicates your leadership experience, expertise, and professional identity.",
       price: "From $200",
+      icon: UserRound,
     },
     {
-      icon: Compass,
+      number: "04",
       title: "Career Strategy",
       description:
-        "Personalized career direction and practical strategy for navigating your next professional move with greater clarity.",
+        "Get structured guidance around your next career move, including positioning, direction, priorities, and practical next steps.",
       price: "From $500",
-    },
-  ];
-
-  const stats = [
-    {
-      value: 500,
-      suffix: "+",
-      label: "Professionals supported",
-    },
-    {
-      value: 85,
-      suffix: "%",
-      label: "Interview rate",
-    },
-    {
-      value: 8,
-      suffix: "+",
-      label: "Years of experience",
-    },
-    {
-      value: 15,
-      suffix: "+",
-      label: "Industries served",
+      icon: Target,
     },
   ];
 
   return (
-    <section className="bg-white py-20 sm:py-24 lg:py-28">
-      <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
+    <section className="bg-white px-5 py-20 sm:px-6 sm:py-24 lg:px-8 lg:py-28">
+      <div className="mx-auto max-w-7xl">
+        {/* Section Header */}
+        <motion.div
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.6 }}
+          className="mx-auto max-w-3xl text-center"
+        >
+          <div className="flex items-center justify-center gap-3">
+            <span className="h-px w-8 bg-[#00B4D8]" />
 
-        {/* SECTION INTRO */}
-        <div className="flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.3 }}
-            transition={{ duration: 0.6 }}
-            className="max-w-2xl"
-          >
-            <div className="flex items-center gap-3">
-              <span className="h-px w-8 bg-[#00B4D8]" />
+            <span className="text-xs font-bold uppercase tracking-[0.18em] text-[#00B4D8]">
+              What We Do
+            </span>
 
-              <span className="text-xs font-bold uppercase tracking-[0.18em] text-[#00B4D8]">
-                What We Do
-              </span>
-            </div>
+            <span className="h-px w-8 bg-[#00B4D8]" />
+          </div>
 
-            <h2 className="mt-4 text-3xl font-bold leading-tight tracking-[-0.025em] text-slate-950 sm:text-4xl lg:text-[42px]">
-              Professional support for every stage of your career.
-            </h2>
+          <h2 className="mt-5 text-3xl font-extrabold tracking-tight text-slate-950 sm:text-4xl lg:text-5xl">
+            Career support built around where you want to go.
+          </h2>
 
-            <p className="mt-5 max-w-xl text-base leading-7 text-slate-600">
-              From your resume and LinkedIn profile to executive
-              positioning and long-term career direction, our services
-              are built around helping you present yourself with
-              greater clarity and confidence.
-            </p>
-          </motion.div>
+          <p className="mt-5 text-base leading-8 text-slate-600 sm:text-lg">
+            LCP Careers helps professionals communicate their experience,
+            strengthen their professional positioning, and make more
+            informed career moves.
+          </p>
+        </motion.div>
 
-          <motion.div
-            initial={{ opacity: 0, x: 15 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, amount: 0.3 }}
-            transition={{ duration: 0.6, delay: 0.1 }}
-          >
-            <Link
-              to="/services"
-              className="group inline-flex items-center gap-2 text-sm font-bold text-[#00B4D8] transition-colors hover:text-slate-900"
-            >
-              View all services
-
-              <ArrowUpRight
-                size={17}
-                className="transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
-              />
-            </Link>
-          </motion.div>
-        </div>
-
-        {/* SERVICES */}
-        <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        {/* Services Grid */}
+        <div className="mt-14 grid gap-6 md:grid-cols-2">
           {services.map((service, index) => {
             const Icon = service.icon;
 
             return (
-              <motion.div
-                key={service.title}
-                initial={{ opacity: 0, y: 25 }}
+              <motion.article
+                key={service.number}
+                initial={{ opacity: 0, y: 28 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: 0.2 }}
+                viewport={{ once: true, amount: 0.15 }}
                 transition={{
                   duration: 0.55,
                   delay: index * 0.08,
                 }}
-                className="group flex min-h-[330px] flex-col rounded-2xl border border-slate-200 bg-white p-6 transition-all duration-300 hover:-translate-y-1 hover:border-[#00B4D8]/40 hover:shadow-[0_16px_40px_rgba(0,0,0,0.07)]"
+                whileHover={{ y: -5 }}
+                className="group relative overflow-hidden rounded-3xl border border-slate-200 bg-white p-7 shadow-[0_12px_35px_rgba(15,23,42,0.05)] transition-all duration-300 hover:shadow-[0_18px_45px_rgba(15,23,42,0.09)] sm:p-8"
               >
-                <div className="flex items-center justify-between">
-                  <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-[#00B4D8]/10 text-[#00B4D8] transition-colors duration-300 group-hover:bg-[#00B4D8] group-hover:text-white">
-                    <Icon size={20} strokeWidth={2} />
+                {/* Decorative Number */}
+                <span className="absolute right-6 top-5 text-5xl font-extrabold tracking-tight text-slate-100 transition-colors duration-300 group-hover:text-[#caf0f8]">
+                  {service.number}
+                </span>
+
+                <div className="relative">
+                  {/* Icon */}
+                  <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#caf0f8] text-[#0077B6] transition-all duration-300 group-hover:bg-[#00B4D8] group-hover:text-white">
+                    <Icon size={22} strokeWidth={2.2} />
                   </div>
 
-                  <ArrowUpRight
-                    size={18}
-                    className="text-slate-300 transition-all duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-[#00B4D8]"
-                  />
-                </div>
-
-                <div className="mt-8">
-                  <h3 className="text-lg font-bold text-slate-950">
+                  {/* Title */}
+                  <h3 className="mt-6 text-xl font-extrabold text-slate-950">
                     {service.title}
                   </h3>
 
-                  <p className="mt-3 text-sm leading-6 text-slate-500">
+                  {/* Description */}
+                  <p className="mt-3 max-w-xl text-sm leading-7 text-slate-600 sm:text-[15px]">
                     {service.description}
                   </p>
+
+                  {/* Footer */}
+                  <div className="mt-7 flex items-center justify-between gap-4 border-t border-slate-100 pt-5">
+                    <span className="text-sm font-bold text-[#0077B6]">
+                      {service.price}
+                    </span>
+
+                    <Link
+                      to="/services"
+                      className="group/link inline-flex items-center gap-2 text-sm font-bold text-slate-900 transition-colors duration-300 hover:text-[#0077B6]"
+                    >
+                      Learn More
+
+                      <ArrowUpRight
+                        size={16}
+                        strokeWidth={2.4}
+                        className="transition-transform duration-300 group-hover/link:-translate-y-0.5 group-hover/link:translate-x-0.5"
+                      />
+                    </Link>
+                  </div>
                 </div>
 
-                <div className="mt-auto border-t border-slate-100 pt-5">
-                  <p className="text-sm font-bold text-slate-900">
-                    {service.price}
-                  </p>
-                </div>
-              </motion.div>
+                {/* Bottom Accent */}
+                <div className="absolute bottom-0 left-0 h-1 w-0 bg-[#00B4D8] transition-all duration-500 group-hover:w-full" />
+              </motion.article>
             );
           })}
         </div>
 
-        {/* LIVE STATISTICS */}
+        {/* Bottom CTA */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.3 }}
-          transition={{ duration: 0.6 }}
-          className="mt-14 overflow-hidden rounded-2xl bg-slate-950"
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className="mt-10 flex flex-col gap-5 rounded-3xl bg-slate-50 px-6 py-7 sm:px-8 sm:py-8 md:flex-row md:items-center md:justify-between"
         >
-          <div className="grid divide-y divide-white/10 sm:grid-cols-2 sm:divide-x sm:divide-y-0 lg:grid-cols-4">
-            {stats.map((stat) => (
-              <div
-                key={stat.label}
-                className="px-6 py-7 text-center sm:px-5 lg:py-8"
-              >
-                <p className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-                  <Counter
-                    value={stat.value}
-                    suffix={stat.suffix}
-                  />
-                </p>
+          <div>
+            <p className="text-base font-bold text-slate-950">
+              Not sure which service fits your goals?
+            </p>
 
-                <p className="mt-2 text-xs font-medium uppercase tracking-[0.12em] text-slate-400">
-                  {stat.label}
-                </p>
-              </div>
-            ))}
+            <p className="mt-1 text-sm leading-6 text-slate-600">
+              Tell us what you are working toward and we can help you
+              identify the most suitable starting point.
+            </p>
           </div>
-        </motion.div>
-
-        {/* CTA */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="mt-7 flex flex-col gap-4 rounded-2xl border border-[#CAD182]/60 bg-[#CAD182]/20 px-6 py-5 sm:flex-row sm:items-center sm:justify-between"
-        >
-          <p className="max-w-2xl text-sm leading-6 text-slate-700">
-            Not sure which service fits your situation? Start with a
-            free review and identify where your professional profile
-            needs the most attention.
-          </p>
 
           <Link
             to="/contact#enquiry"
-            className="group inline-flex shrink-0 items-center gap-2 text-sm font-bold text-slate-900 transition-colors hover:text-[#00B4D8]"
+            className="group inline-flex shrink-0 items-center justify-center gap-2 rounded-xl bg-[#00B4D8] px-5 py-3.5 text-sm font-bold text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#009FC0] hover:shadow-lg hover:shadow-[#00B4D8]/20"
           >
-            Get a free review
+            Get a Free Review
 
             <ArrowUpRight
               size={17}
+              strokeWidth={2.5}
               className="transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
             />
           </Link>
         </motion.div>
-
       </div>
     </section>
   );
