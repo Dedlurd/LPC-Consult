@@ -273,7 +273,7 @@ function IndividualServices() {
         },
         {
           name: "Executive",
-          price: "$1,250 - $1,550",
+          price: "$1,250 - $1,650",
           description:
             "A highly refined profile for senior leaders pursuing chairman, board, and high-level advisory appointments.",
           features: [
@@ -317,7 +317,7 @@ function IndividualServices() {
         },
         {
           name: "Executive",
-          price: "$1,250 - $1,550",
+          price: "$1,250 - $1,650",
           description:
             "A premium one-page executive profile for senior leaders, board candidates, and high-level professional opportunities.",
           features: [
