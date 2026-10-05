@@ -1,555 +1,526 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
-import {
-  FileText,
-  BriefcaseBusiness,
-  UserRound,
-  Target,
-  Award,
-  ClipboardCheck,
-  Search,
-  Crown,
-  UsersRound,
-  ChevronDown,
-  ArrowUpRight,
-} from "lucide-react";
 import { Link } from "react-router-dom";
+import {
+  ArrowUpRight,
+  BadgeCheck,
+  BriefcaseBusiness,
+  ChevronDown,
+  Crown,
+  FileCheck2,
+  FileText,
+  GraduationCap,
+  MessageCircle,
+  Search,
+  ShieldCheck,
+  Target,
+  UserRound,
+} from "lucide-react";
 
 function IndividualServices() {
-  const [openService, setOpenService] = useState(1);
+  const [openService, setOpenService] = useState(0);
 
   const services = [
     {
       number: "01",
       title: "Resume Writing / Rewriting",
-      shortDescription:
-        "A professionally written or rewritten resume designed to communicate your experience, achievements, and career direction clearly.",
       icon: FileText,
+      intro:
+        "A professionally developed resume built around your experience, target role, and the value you bring to an employer.",
       tiers: [
         {
           name: "Basic",
-          price: "$395",
+          price: "$350 - $500",
           description:
-            "A focused resume refresh for professionals who need stronger structure, clarity, and presentation.",
+            "A focused professional resume for a clear target direction.",
           features: [
-            "Professional resume structure",
-            "Content refinement",
-            "Achievement-focused language",
-            "ATS-conscious formatting",
+            "ATS-friendly structure",
+            "Achievement-focused writing",
+            "Targeted keyword integration",
           ],
         },
         {
           name: "Professional",
-          price: "$749",
+          price: "$725 - $1,050",
+          popular: true,
           description:
-            "A more strategic resume for professionals actively positioning themselves for competitive opportunities.",
+            "A deeper rewrite designed for stronger industry positioning.",
           features: [
-            "Complete resume rewrite",
-            "Strategic professional positioning",
-            "Achievement and impact development",
-            "ATS-conscious structure",
-            "Professional formatting",
+            "Everything in Basic",
+            "Role and industry-specific positioning",
+            "Professional summary development",
           ],
         },
         {
           name: "Executive",
-          price: "$1,250",
+          price: "$1,250 - $1,750",
           description:
-            "A high-level executive resume built around leadership scope, influence, strategic contribution, and career direction.",
+            "Senior-level positioning for experienced professionals and leaders.",
           features: [
-            "Executive-level resume development",
-            "Leadership positioning",
-            "Strategic achievement development",
-            "Career narrative refinement",
-            "Executive presentation",
+            "Everything in Professional",
+            "Leadership-focused positioning",
+            "Executive-level career narrative",
           ],
         },
       ],
     },
+
     {
       number: "02",
       title: "Cover Letter Writing",
-      shortDescription:
-        "A tailored cover letter that connects your background, strengths, and career direction to the opportunity you are pursuing.",
-      icon: ClipboardCheck,
+      icon: FileCheck2,
+      intro:
+        "A tailored cover letter that connects your experience to the opportunity and gives your application a stronger professional voice.",
       tiers: [
         {
           name: "Basic",
-          price: "$200",
+          price: "$225 - $475",
           description:
-            "A concise cover letter designed around a specific role and professional direction.",
+            "A clear and professionally written application letter.",
           features: [
-            "Role-specific positioning",
-            "Professional introduction",
-            "Relevant experience alignment",
-            "Polished final copy",
+            "Role-focused content",
+            "Professional structure",
+            "Clear value proposition",
           ],
         },
         {
           name: "Professional",
-          price: "$375",
+          price: "$500 - $725",
+          popular: true,
           description:
-            "A stronger, more tailored cover letter designed to communicate your value with greater precision.",
+            "A more targeted letter built around the opportunity.",
           features: [
-            "Detailed role alignment",
-            "Personalized professional narrative",
-            "Relevant achievement integration",
-            "Stronger closing positioning",
-            "Professional formatting",
+            "Everything in Basic",
+            "Job-specific positioning",
+            "Stronger achievement integration",
           ],
         },
         {
           name: "Executive",
-          price: "$499",
+          price: "$775 - $1,050",
           description:
-            "An executive-level cover letter built around leadership impact, strategic experience, and senior-level positioning.",
+            "A refined application narrative for senior opportunities.",
           features: [
-            "Executive positioning",
-            "Leadership-focused narrative",
-            "Strategic experience alignment",
-            "High-level professional messaging",
-            "Executive presentation",
+            "Everything in Professional",
+            "Leadership-level messaging",
+            "Senior-career positioning",
           ],
         },
       ],
     },
+
     {
       number: "03",
       title: "LinkedIn Profile Optimization",
-      shortDescription:
-        "A stronger LinkedIn presence that aligns your professional profile with the opportunities, industries, and roles you want to pursue.",
-      icon: BriefcaseBusiness,
+      icon: BadgeCheck,
+      intro:
+        "A strategic LinkedIn refresh that aligns your profile with your professional direction and strengthens how your expertise is presented online.",
       tiers: [
         {
           name: "Basic",
-          price: "$495",
+          price: "$495 - $750",
           description:
-            "A focused optimization of your core LinkedIn profile sections.",
+            "The essential profile improvements for a stronger presence.",
           features: [
-            "Headline refinement",
-            "About section improvement",
-            "Experience section optimization",
-            "Core positioning guidance",
+            "Headline optimization",
+            "About section refinement",
+            "Core profile recommendations",
           ],
         },
         {
           name: "Professional",
-          price: "$1,050",
+          price: "$825 - $1,250",
+          popular: true,
           description:
-            "A complete professional LinkedIn positioning service designed around your career direction.",
+            "A deeper optimization for stronger professional positioning.",
           features: [
-            "Complete profile optimization",
-            "Professional headline",
-            "Strategic About section",
-            "Experience positioning",
-            "Skills and keyword guidance",
+            "Everything in Basic",
+            "Experience section development",
+            "Industry-focused positioning",
           ],
         },
         {
           name: "Executive",
-          price: "$1,750",
+          price: "$1,450 - $1,950",
           description:
-            "A strategic executive LinkedIn profile designed to strengthen authority, leadership positioning, and professional visibility.",
+            "Comprehensive positioning for leaders and senior professionals.",
           features: [
-            "Executive profile positioning",
-            "Leadership-focused About section",
-            "Strategic career narrative",
-            "Executive experience positioning",
-            "Professional visibility guidance",
+            "Everything in Professional",
+            "Executive brand positioning",
+            "Leadership profile messaging",
           ],
         },
       ],
     },
+
     {
       number: "04",
       title: "Executive Bio",
-      shortDescription:
-        "A polished professional biography for senior professionals, leaders, founders, speakers, websites, and professional profiles.",
       icon: UserRound,
+      intro:
+        "A concise professional biography designed to communicate your background, expertise, leadership experience, and professional identity.",
       tiers: [
         {
           name: "Basic",
-          price: "$200",
+          price: "$250 - $475",
           description:
-            "A concise professional biography that communicates your background and current professional identity.",
+            "A concise biography for professional use.",
           features: [
-            "Professional biography",
-            "Career highlights",
-            "Clear professional positioning",
+            "Professional background summary",
+            "Clear career narrative",
             "Polished final copy",
           ],
         },
         {
           name: "Professional",
-          price: "$375",
+          price: "$500 - $750",
+          popular: true,
           description:
-            "A more developed professional bio with stronger narrative flow and positioning.",
+            "A stronger biography for broader professional visibility.",
           features: [
-            "Expanded career narrative",
-            "Achievement integration",
-            "Professional positioning",
-            "Audience-aware messaging",
-            "Refined final copy",
+            "Everything in Basic",
+            "Achievement and expertise positioning",
+            "Stronger professional voice",
           ],
         },
         {
           name: "Executive",
-          price: "$499",
+          price: "$775 - $1,050",
           description:
-            "A leadership-focused biography designed to communicate credibility, influence, and executive presence.",
+            "A leadership-focused biography for senior professionals.",
           features: [
-            "Executive-level narrative",
-            "Leadership positioning",
-            "Strategic achievement integration",
-            "Authority-focused messaging",
-            "Executive-ready presentation",
+            "Everything in Professional",
+            "Executive positioning",
+            "Leadership narrative",
           ],
         },
       ],
     },
+
     {
       number: "05",
       title: "KSA Statements",
-      shortDescription:
-        "Professionally developed Knowledge, Skills, and Abilities statements that connect your qualifications and experience to the requirements of the role.",
       icon: Target,
+      intro:
+        "Structured statements that clearly demonstrate your knowledge, skills, and abilities against the requirements of the opportunity.",
       tiers: [
         {
           name: "Basic",
-          price: "$200",
+          price: "$200 - $420",
           description:
-            "Focused support for developing clear and relevant KSA statements.",
+            "Focused support for presenting your core competencies.",
           features: [
-            "Requirement alignment",
-            "Relevant experience selection",
-            "Clear professional writing",
-            "Structured presentation",
+            "Requirement-based structure",
+            "Clear evidence presentation",
+            "Professional writing",
           ],
         },
         {
           name: "Professional",
-          price: "$375",
+          price: "$475 - $625",
+          popular: true,
           description:
-            "More detailed KSA development with stronger evidence and positioning.",
+            "More detailed positioning around the role requirements.",
           features: [
-            "Detailed requirement mapping",
-            "Evidence-based writing",
-            "Achievement integration",
-            "Professional narrative",
+            "Everything in Basic",
+            "Stronger evidence development",
+            "Role-specific alignment",
           ],
         },
         {
           name: "Executive",
-          price: "$499",
+          price: "$675 - $925",
           description:
-            "High-level KSA development for senior and leadership opportunities.",
+            "A deeper approach for complex or senior-level applications.",
           features: [
-            "Strategic requirement alignment",
-            "Leadership evidence",
-            "Complex achievement development",
-            "Executive-level positioning",
+            "Everything in Professional",
+            "Advanced evidence positioning",
+            "Senior-level presentation",
           ],
         },
       ],
     },
+
     {
       number: "06",
       title: "Chairman & Board Appointment Profile",
-      shortDescription:
-        "A concise and strategically positioned profile designed for board, chairman, advisory, and governance-level opportunities.",
       icon: Crown,
+      intro:
+        "A strategically developed executive profile designed to position experienced professionals for chairman, board, advisory, and governance appointments.",
       tiers: [
         {
           name: "Basic",
-          price: "$200",
+          price: "$425 - $750",
           description:
             "A focused board profile presenting your leadership background, governance relevance, and professional credibility.",
           features: [
-            "Board-focused profile",
-            "Leadership summary",
-            "Relevant governance experience",
-            "Professional positioning",
+            "Board-focused professional summary",
+            "Leadership and governance positioning",
+            "Career highlights aligned to board-level opportunities",
           ],
         },
         {
           name: "Professional",
-          price: "$375",
+          price: "$825 - $1,050",
+          popular: true,
           description:
-            "A stronger board appointment profile built around leadership experience, strategic contribution, and organizational influence.",
+            "A more comprehensive profile designed for stronger board appointment positioning.",
           features: [
-            "Board positioning strategy",
-            "Leadership and governance narrative",
-            "Relevant achievement integration",
-            "Strategic experience presentation",
-            "Professional formatting",
+            "Everything in Basic",
+            "Board and executive positioning",
+            "Strategic leadership narrative",
           ],
         },
         {
           name: "Executive",
-          price: "$499",
+          price: "$1,250 - $1,550",
           description:
-            "A senior-level board profile designed to communicate authority, governance value, strategic influence, and leadership depth.",
+            "A highly refined profile for senior leaders pursuing chairman, board, and high-level advisory appointments.",
           features: [
-            "Executive board positioning",
-            "Governance-focused narrative",
-            "Leadership impact",
-            "Strategic influence positioning",
-            "High-level professional presentation",
+            "Everything in Professional",
+            "Advanced board-level positioning",
+            "Executive governance narrative",
           ],
         },
       ],
     },
+
     {
       number: "07",
       title: "Executive One-Page Profile",
-      shortDescription:
-        "A concise executive snapshot designed to communicate your leadership identity, expertise, achievements, and value in a single page.",
-      icon: FileText,
+      icon: FileCheck2,
+      intro:
+        "A concise, high-impact executive profile that distills your leadership experience, expertise, achievements, and professional value into a focused one-page document.",
       tiers: [
         {
           name: "Basic",
-          price: "$200",
+          price: "$425 - $750",
           description:
-            "A concise one-page executive profile covering your key experience and professional identity.",
+            "A concise executive profile focused on your strongest professional credentials and career highlights.",
           features: [
-            "One-page executive summary",
-            "Career highlights",
-            "Core expertise",
-            "Professional positioning",
+            "One-page executive structure",
+            "Professional background positioning",
+            "Key achievement highlights",
           ],
         },
         {
           name: "Professional",
-          price: "$375",
+          price: "$825 - $1,050",
+          popular: true,
           description:
-            "A more strategic one-page profile built around leadership impact and professional differentiation.",
+            "A stronger one-page profile designed to communicate senior-level value with greater precision.",
           features: [
-            "Executive positioning",
-            "Leadership summary",
-            "Selected achievements",
-            "Core expertise positioning",
-            "Professional formatting",
+            "Everything in Basic",
+            "Leadership and expertise positioning",
+            "Stronger executive value proposition",
           ],
         },
         {
           name: "Executive",
-          price: "$499",
+          price: "$1,250 - $1,550",
           description:
-            "A high-impact executive profile designed for senior leaders who need a concise and authoritative professional snapshot.",
+            "A premium one-page executive profile for senior leaders, board candidates, and high-level professional opportunities.",
           features: [
-            "Executive-level positioning",
-            "Leadership identity",
-            "Strategic achievement highlights",
-            "Executive value proposition",
-            "Premium one-page presentation",
+            "Everything in Professional",
+            "Advanced executive positioning",
+            "High-impact leadership narrative",
           ],
         },
       ],
     },
+
     {
       number: "08",
       title: "Executive Leadership Profile",
-      shortDescription:
-        "A strategic profile that presents your leadership experience, influence, expertise, and executive value across professional opportunities.",
-      icon: UsersRound,
+      icon: Crown,
+      intro:
+        "A high-level professional profile built to communicate leadership scope, expertise, impact, and executive value.",
       tiers: [
         {
           name: "Basic",
-          price: "$200",
+          price: "$325 - $575",
           description:
-            "A focused leadership profile that communicates your management experience and professional strengths.",
+            "A structured leadership profile for professional use.",
           features: [
-            "Leadership overview",
-            "Management experience",
-            "Professional positioning",
-            "Polished final copy",
+            "Leadership summary",
+            "Career highlights",
+            "Executive-focused structure",
           ],
         },
         {
           name: "Professional",
-          price: "$375",
+          price: "$600 - $875",
+          popular: true,
           description:
-            "A more detailed profile for experienced leaders seeking stronger positioning.",
+            "A more comprehensive profile for senior professionals.",
           features: [
-            "Leadership narrative",
-            "Management scope",
-            "Achievement development",
-            "Strategic positioning",
-            "Professional formatting",
+            "Everything in Basic",
+            "Leadership impact positioning",
+            "Strategic career narrative",
           ],
         },
         {
           name: "Executive",
-          price: "$499",
+          price: "$925 - $1,250",
           description:
-            "An executive leadership profile built to communicate influence, strategic contribution, and leadership depth.",
+            "A highly polished profile for senior leadership positioning.",
           features: [
-            "Executive leadership positioning",
-            "Strategic influence",
-            "Leadership achievements",
-            "Career narrative refinement",
-            "Executive presentation",
+            "Everything in Professional",
+            "Executive brand narrative",
+            "High-level leadership positioning",
           ],
         },
       ],
     },
+
     {
       number: "09",
-      title: "ECQ",
-      shortDescription:
-        "Professionally structured Executive Core Qualifications that communicate leadership competencies and evidence for senior-level opportunities.",
-      icon: Award,
+      title: "Executive Core Qualifications (ECQ)",
+      icon: ShieldCheck,
+      intro:
+        "Structured executive qualification narratives that connect your leadership experience and evidence to the required competency areas.",
       tiers: [
         {
           name: "Basic",
-          price: "$300",
+          price: "$325 - $575",
           description:
-            "Focused support for developing clear and relevant ECQ narratives.",
+            "A clear foundation for presenting your executive qualifications.",
           features: [
-            "ECQ structure",
-            "Relevant experience selection",
-            "Clear leadership writing",
+            "Competency-focused structure",
+            "Evidence organization",
             "Professional presentation",
           ],
         },
         {
           name: "Professional",
-          price: "$499",
+          price: "$600 - $875",
+          popular: true,
           description:
-            "Detailed ECQ development with stronger evidence and leadership positioning.",
+            "Stronger development around executive leadership evidence.",
           features: [
-            "Leadership competency mapping",
-            "Evidence-based narrative",
-            "Achievement integration",
-            "Strategic positioning",
+            "Everything in Basic",
+            "Deeper evidence development",
+            "Leadership-focused positioning",
           ],
         },
         {
           name: "Executive",
-          price: "$749",
+          price: "$925 - $1,250",
           description:
-            "Comprehensive ECQ development for senior executive opportunities and leadership-level applications.",
+            "Comprehensive executive-level positioning and narrative development.",
           features: [
-            "Executive-level positioning",
-            "Complex leadership examples",
-            "Strategic achievement development",
-            "Competency alignment",
-            "Executive-ready presentation",
+            "Everything in Professional",
+            "Advanced executive narrative",
+            "High-level strategic positioning",
           ],
         },
       ],
     },
+
     {
       number: "10",
       title: "Interview Preparation",
-      shortDescription:
-        "Structured preparation to help you communicate your experience, answer difficult questions, and approach interviews with greater confidence.",
-      icon: Search,
+      icon: MessageCircle,
+      intro:
+        "Practical preparation to help you communicate your experience, answer difficult questions, and approach important interviews with greater confidence.",
       tiers: [
         {
           name: "Basic",
-          price: "$500",
+          price: "$500 - $725",
           description:
-            "Focused interview preparation around your target role and professional background.",
+            "Focused preparation around your target interview.",
           features: [
-            "Interview preparation guidance",
-            "Common question review",
-            "Professional story development",
-            "Role-specific preparation",
+            "Interview question preparation",
+            "Answer structure guidance",
+            "Role-focused discussion",
           ],
         },
         {
-          name: "Professional",
-          price: "$705",
+          name: "Professional Coaching",
+          price: "$805 - $1,350",
+          popular: true,
           description:
-            "A deeper preparation process with structured practice and stronger response development.",
+            "More comprehensive preparation with deeper coaching support.",
           features: [
-            "Detailed interview preparation",
-            "Role-specific questions",
-            "Achievement story development",
-            "Response refinement",
-            "Interview strategy",
+            "Everything in Basic",
+            "Personalized answer coaching",
+            "Interview strategy guidance",
           ],
         },
         {
-          name: "Executive",
-          price: "$1,099",
+          name: "Executive Coaching",
+          price: "$1,225 - $2,225",
           description:
-            "Senior-level interview preparation focused on executive presence, strategic communication, and high-stakes conversations.",
+            "High-level coaching for leadership and executive interviews.",
           features: [
+            "Everything in Professional",
             "Executive interview preparation",
-            "Leadership storytelling",
-            "Strategic question preparation",
-            "Executive communication",
-            "High-stakes interview strategy",
+            "Leadership communication coaching",
           ],
         },
       ],
     },
+
     {
       number: "11",
       title: "Job Search Assistance",
-      shortDescription:
-        "Practical support to help you organize your search, identify relevant opportunities, and approach your job search more strategically.",
-      icon: BriefcaseBusiness,
+      icon: Search,
+      intro:
+        "Practical support for organizing and improving your approach to identifying relevant opportunities and managing your search.",
       tiers: [
         {
           name: "Basic",
-          price: "$10",
+          price: "$225 - $375",
           description:
-            "Simple job search guidance to help you establish a clearer starting point.",
+            "A simple starting point for organizing your search.",
           features: [
-            "Search direction",
-            "Opportunity identification",
-            "Basic job search guidance",
-            "Action recommendations",
+            "Search direction guidance",
+            "Opportunity identification support",
+            "Basic search structure",
           ],
         },
         {
           name: "Professional",
-          price: "$15",
+          price: "$425 - $625",
+          popular: true,
           description:
-            "More structured assistance for professionals actively navigating a targeted job search.",
+            "Broader support for a more structured job search.",
           features: [
-            "Target opportunity guidance",
-            "Search strategy",
-            "Application prioritization",
-            "Job search organization",
+            "Everything in Basic",
+            "Search refinement",
+            "Opportunity targeting support",
           ],
         },
         {
           name: "Executive",
-          price: "$20",
+          price: "$675 - $1,050",
           description:
-            "Focused support for senior professionals managing a selective and strategic search.",
+            "A focused search approach for senior-level opportunities.",
           features: [
-            "Executive opportunity targeting",
-            "Search strategy",
-            "Opportunity prioritization",
-            "Strategic application guidance",
+            "Everything in Professional",
+            "Senior-opportunity targeting",
+            "Executive search guidance",
           ],
         },
       ],
     },
   ];
 
-  const toggleService = (number) => {
-    setOpenService((current) =>
-      current === number ? null : number
-    );
+  const toggleService = (index) => {
+    setOpenService(openService === index ? -1 : index);
   };
 
   return (
     <section
       id="individual"
-      className="scroll-mt-28 bg-slate-50 px-5 py-20 sm:px-6 lg:px-8 lg:py-28"
+      className="bg-slate-50 py-20 sm:py-24 lg:py-28"
     >
-      <div className="mx-auto max-w-7xl">
-        {/* Header */}
+      <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
+        {/* Section Header */}
         <motion.div
-          initial={{ opacity: 0, y: 24 }}
+          initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.2 }}
+          viewport={{ once: true, amount: 0.25 }}
           transition={{ duration: 0.6 }}
           className="max-w-3xl"
         >
@@ -561,68 +532,100 @@ function IndividualServices() {
             </span>
           </div>
 
-          <h2 className="mt-5 text-3xl font-extrabold tracking-tight text-slate-950 sm:text-4xl lg:text-5xl">
-            Choose the support that fits your next move.
+          <h2 className="mt-5 text-3xl font-bold leading-tight tracking-[-0.03em] text-slate-950 sm:text-4xl lg:text-[46px]">
+            Choose the service that matches your current career need.
           </h2>
 
-          <p className="mt-5 max-w-2xl text-base leading-8 text-slate-600 sm:text-lg">
-            Select a service below to explore the available levels of
-            support and find the option that best matches your career
-            goals.
+          <p className="mt-5 max-w-2xl text-base leading-7 text-slate-600 sm:text-[17px]">
+            Select a service to compare the available levels of support.
+            Each tier is designed for a different level of depth,
+            positioning, and professional requirement.
           </p>
         </motion.div>
 
+        {/* Pricing Introduction */}
+        <motion.div
+          initial={{ opacity: 0, y: 15 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.25 }}
+          transition={{ duration: 0.6, delay: 0.1 }}
+          className="mt-10 rounded-2xl border border-[#CAD182]/70 bg-[#CAD182]/20 px-6 py-6 sm:px-8"
+        >
+          <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
+            <div className="max-w-2xl">
+              <p className="text-sm font-bold uppercase tracking-[0.12em] text-slate-900">
+                Transparent Pricing
+              </p>
+
+              <p className="mt-2 text-sm leading-6 text-slate-600 sm:text-base">
+                Every service has clearly defined pricing and
+                deliverables. Choose the level that fits the depth of
+                support you need.
+              </p>
+            </div>
+
+            <div className="flex items-center gap-2 text-sm font-semibold text-slate-700">
+              <span className="h-2 w-2 rounded-full bg-[#00B4D8]" />
+              1–3 day delivery
+            </div>
+          </div>
+        </motion.div>
+
         {/* Services */}
-        <div className="mt-12 space-y-4">
+        <div className="mt-10 space-y-4">
           {services.map((service, index) => {
             const Icon = service.icon;
-            const isOpen = openService === Number(service.number);
+            const isOpen = openService === index;
 
             return (
               <motion.div
                 key={service.number}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: 0.1 }}
+                viewport={{ once: true, amount: 0.15 }}
                 transition={{
                   duration: 0.5,
-                  delay: index * 0.04,
+                  delay: index * 0.03,
                 }}
-                className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-[0_8px_30px_rgba(15,23,42,0.04)]"
+                className={`overflow-hidden rounded-2xl border bg-white transition-all duration-300 ${
+                  isOpen
+                    ? "border-[#00B4D8]/50 shadow-[0_18px_45px_rgba(0,0,0,0.07)]"
+                    : "border-slate-200"
+                }`}
               >
                 {/* Service Header */}
                 <button
                   type="button"
-                  onClick={() => toggleService(Number(service.number))}
-                  className="flex w-full items-center gap-4 px-5 py-6 text-left sm:px-7"
+                  onClick={() => toggleService(index)}
                   aria-expanded={isOpen}
+                  className="flex w-full items-center gap-4 px-5 py-5 text-left sm:px-7 sm:py-6"
                 >
-                  <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[#caf0f8] text-sm font-extrabold text-[#0077B6]">
-                    {service.number}
+                  <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#00B4D8]/10 text-[#00B4D8]">
+                    <Icon size={19} strokeWidth={2} />
                   </span>
 
-                  <span className="flex min-w-0 flex-1 items-center gap-4">
-                    <span className="hidden h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-slate-50 text-slate-700 sm:flex">
-                      <Icon size={20} strokeWidth={2.2} />
-                    </span>
+                  <span className="min-w-0 flex-1">
+                    <span className="flex flex-wrap items-center gap-2">
+                      <span className="text-xs font-bold tracking-[0.12em] text-[#00B4D8]">
+                        {service.number}
+                      </span>
 
-                    <span>
-                      <span className="block text-base font-extrabold text-slate-950 sm:text-lg">
+                      <span className="text-base font-bold text-slate-950 sm:text-lg">
                         {service.title}
                       </span>
+                    </span>
 
-                      <span className="mt-1 block max-w-3xl text-sm leading-6 text-slate-500">
-                        {service.shortDescription}
-                      </span>
+                    <span className="mt-1 block text-sm text-slate-500">
+                      {service.intro}
                     </span>
                   </span>
 
                   <span
-                    className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-slate-50 text-slate-600 transition-transform duration-300 ${
+                    className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-slate-200 text-slate-500 transition-transform duration-300 ${
                       isOpen ? "rotate-180" : ""
                     }`}
                   >
-                    <ChevronDown size={19} />
+                    <ChevronDown size={18} />
                   </span>
                 </button>
 
@@ -638,66 +641,68 @@ function IndividualServices() {
                         ease: "easeInOut",
                       }}
                     >
-                      <div className="border-t border-slate-100 px-5 pb-7 pt-7 sm:px-7">
-                        <div className="grid gap-5 md:grid-cols-3">
-                          {service.tiers.map((tier, tierIndex) => (
-                            <motion.div
+                      <div className="border-t border-slate-100 px-5 pb-6 pt-6 sm:px-7 sm:pb-8">
+                        <div className="grid gap-5 lg:grid-cols-3">
+                          {service.tiers.map((tier) => (
+                            <div
                               key={tier.name}
-                              initial={{
-                                opacity: 0,
-                                y: 12,
-                              }}
-                              animate={{
-                                opacity: 1,
-                                y: 0,
-                              }}
-                              transition={{
-                                duration: 0.35,
-                                delay: tierIndex * 0.07,
-                              }}
-                              className={`rounded-2xl border p-5 ${
-                                tier.name === "Professional"
-                                  ? "border-[#00B4D8]/40 bg-[#caf0f8]/30"
-                                  : "border-slate-200 bg-white"
+                              className={`relative flex flex-col rounded-2xl border p-6 ${
+                                tier.popular
+                                  ? "border-[#00B4D8] bg-[#00B4D8]/5"
+                                  : "border-slate-200 bg-slate-50/60"
                               }`}
                             >
-                              {/* Tier */}
-                              <div className="flex items-center justify-between gap-3">
-                                <span
-                                  className={`text-xs font-bold uppercase tracking-[0.14em] ${
-                                    tier.name === "Professional"
-                                      ? "text-[#0077B6]"
-                                      : "text-slate-500"
-                                  }`}
-                                >
-                                  {tier.name}
+                              {tier.popular && (
+                                <span className="absolute -top-3 left-5 rounded-full bg-[#00B4D8] px-3 py-1 text-[10px] font-bold uppercase tracking-[0.12em] text-white">
+                                  Popular
                                 </span>
+                              )}
 
-                                {tier.name === "Professional" && (
-                                  <span className="rounded-full bg-[#00B4D8] px-2.5 py-1 text-[10px] font-bold uppercase tracking-[0.1em] text-white">
-                                    Popular
-                                  </span>
-                                )}
+                              <div className="flex items-start justify-between gap-4">
+                                <div>
+                                  <p className="text-sm font-bold text-slate-900">
+                                    {tier.name}
+                                  </p>
+
+                                  <p className="mt-3 text-3xl font-bold tracking-tight text-slate-950">
+                                    {tier.price}
+                                  </p>
+                                </div>
+
+                                <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-white text-[#00B4D8] shadow-sm">
+                                  <Icon size={17} />
+                                </div>
                               </div>
 
-                              {/* Price */}
-                              <p className="mt-3 text-3xl font-extrabold tracking-tight text-slate-950">
-                                {tier.price}
-                              </p>
-
-                              {/* Description */}
-                              <p className="mt-3 text-sm leading-6 text-slate-600">
+                              <p className="mt-4 text-sm leading-6 text-slate-500">
                                 {tier.description}
                               </p>
 
-                              {/* Features */}
-                              <div className="mt-5 space-y-2.5">
+                              <div className="my-6 h-px bg-slate-200" />
+
+                              <div className="space-y-3">
                                 {tier.features.map((feature) => (
                                   <div
                                     key={feature}
                                     className="flex items-start gap-2.5"
                                   >
-                                    <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[#00B4D8]" />
+                                    <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#00B4D8]/10 text-[#00B4D8]">
+                                      <svg
+                                        width="12"
+                                        height="12"
+                                        viewBox="0 0 12 12"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                      >
+                                        <path
+                                          d="M2.5 6.2L4.7 8.4L9.5 3.6"
+                                          stroke="currentColor"
+                                          strokeWidth="1.6"
+                                          strokeLinecap="round"
+                                          strokeLinejoin="round"
+                                        />
+                                      </svg>
+                                    </span>
 
                                     <span className="text-sm leading-5 text-slate-600">
                                       {feature}
@@ -706,22 +711,29 @@ function IndividualServices() {
                                 ))}
                               </div>
 
-                              {/* CTA */}
                               <Link
                                 to="/contact"
-                                className="group mt-6 inline-flex w-full items-center justify-center gap-2 rounded-xl border border-slate-200 px-4 py-3 text-sm font-bold text-slate-900 transition-all duration-300 hover:border-[#00B4D8] hover:bg-[#00B4D8] hover:text-white"
+                                className={`group mt-7 inline-flex items-center justify-center gap-2 rounded-lg px-4 py-3 text-sm font-bold transition-all duration-300 ${
+                                  tier.popular
+                                    ? "bg-[#00B4D8] text-white hover:bg-[#009FC0]"
+                                    : "border border-slate-200 bg-white text-slate-900 hover:border-[#00B4D8] hover:text-[#00B4D8]"
+                                }`}
                               >
                                 Get Started
 
                                 <ArrowUpRight
                                   size={16}
-                                  strokeWidth={2.4}
                                   className="transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
                                 />
                               </Link>
-                            </motion.div>
+                            </div>
                           ))}
                         </div>
+
+                        <p className="mt-6 text-xs leading-5 text-slate-400">
+                          Final scope, delivery timing, and any service
+                          requirements are confirmed before work begins.
+                        </p>
                       </div>
                     </motion.div>
                   )}
@@ -731,54 +743,33 @@ function IndividualServices() {
           })}
         </div>
 
-        {/* Pricing Note */}
+        {/* Bottom Note */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 15 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.2 }}
-          transition={{ duration: 0.6, delay: 0.1 }}
-          className="mt-10 rounded-2xl border border-slate-200 bg-white px-5 py-6 sm:px-7"
-        >
-          <p className="text-sm font-bold text-slate-950">
-            Transparent pricing and clear delivery.
-          </p>
-
-          <p className="mt-2 max-w-4xl text-sm leading-6 text-slate-600">
-            Services are priced according to the level of support selected.
-            Standard delivery is generally targeted within 1–3 days,
-            depending on the service, scope, and information provided.
-            Final timing will be confirmed when your project begins.
-          </p>
-        </motion.div>
-
-        {/* Bottom CTA */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.2 }}
+          viewport={{ once: true, amount: 0.25 }}
           transition={{ duration: 0.6, delay: 0.15 }}
-          className="mt-10 flex flex-col gap-5 rounded-3xl bg-slate-950 px-6 py-8 sm:px-8 md:flex-row md:items-center md:justify-between"
+          className="mt-10 flex flex-col gap-4 rounded-2xl bg-slate-950 px-6 py-6 sm:px-8 lg:flex-row lg:items-center lg:justify-between"
         >
           <div>
-            <p className="text-lg font-bold text-white">
-              Not sure which service is right for you?
+            <p className="text-sm font-bold text-white">
+              Need help choosing the right service?
             </p>
 
-            <p className="mt-2 max-w-2xl text-sm leading-6 text-slate-400">
-              Tell us about your career goals and we can help you identify
-              the most appropriate starting point.
+            <p className="mt-1 max-w-2xl text-sm leading-6 text-slate-400">
+              Tell us about your current career situation and we can
+              help you identify the most suitable starting point.
             </p>
           </div>
 
           <Link
             to="/contact#enquiry"
-            className="group inline-flex shrink-0 items-center justify-center gap-2 rounded-xl bg-[#00B4D8] px-5 py-3.5 text-sm font-bold text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#009FC0] hover:shadow-lg hover:shadow-[#00B4D8]/20"
+            className="group inline-flex shrink-0 items-center justify-center gap-2 rounded-lg bg-[#00B4D8] px-5 py-3.5 text-sm font-bold text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#009FC0]"
           >
             Get a Free Review
 
             <ArrowUpRight
               size={17}
-              strokeWidth={2.5}
               className="transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
             />
           </Link>
